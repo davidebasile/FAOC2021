@@ -14,7 +14,7 @@ The experiments for the mitigated model, third setup, are also reported in a sep
 as described in the article.
 
 All logs of the execution of experiments are reported. 
-Note that in such logs the probability uncertainty (epsilon) is, in some specific case different, different from the one used in the article.
+Note that in such logs the probability uncertainty (epsilon) is, in some specific case, different from the one used in the article.
 We also archived the executable of the used verifier for reproducibility of the logs. 
 
 A legacy file "model with occ and mitigation.xml" is stored, not useful for reproducibility.
