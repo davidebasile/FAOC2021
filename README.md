@@ -10,11 +10,11 @@ Since these comments are not readable by the command-line verifier, the set-up f
 indicate the specific set-up, among those used in the article, and the indication that these files have been used for the 
 verifyta.exe command-line verifier of Uppaal. In all this set-ups the model is unchanged, but only the specific used parameters.
 
-The experiments for the mitigated model, third setup, are also reported in a separate files.  In this case, the model has been amended 
+The experiments for the mitigated model, third setup, are also reported in a separate file.  In this case, the model has been amended 
 as described in the article.
 
 All logs of the execution of experiments are reported. 
-Note that the probability uncertainty is set to 0.05 in the logs, whilst in the article sometimes has been set to 0.005.
+Note that the probability uncertainty epsilon is set to 0.05 in the logs, whilst in the article sometimes has been set to 0.005.
 We also archived the executable of the used verifier for reproducibility of the logs. 
 
 A legacy file "model with occ and mitigation.xml" is stored, not useful for reproducibility.
