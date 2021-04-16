@@ -21,8 +21,8 @@ const int NmaxPosOCC=freq*3;
 const int PLrefreshRate=3;
 const int PLprob=999999999;
 const int minPL=0; 
-const int maxPL=25;
-const int worstCasePL=25;
+const int maxPL=40;
+const int worstCasePL=40;
 
 //OBC_IXLConnectionSupervision constants
 const int TmaxAck=freq*3;
