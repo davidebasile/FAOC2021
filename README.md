@@ -1,7 +1,8 @@
 EXPERIMENTS REPRODUCTION PACKAGE
 
-This repository contains the models and experiments log for the article submitted at Formal Aspects of Computing, special issue 
+This repository contains the models and experiments logs for the article submitted at Formal Aspects of Computing, special issue 
 of our RSSRail 2019 paper. 
+
 The model.xml contains the model, where all parameters for the set-ups are global, and comments on the queries of the verifier 
 are available to improve readability. 
 Since these comments are not readable by the command-line verifier, the set-up for experiments are in separate files, whose name 
