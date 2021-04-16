@@ -1451,7 +1451,7 @@ from 5 to 6 it changes
 			<formula>Pr(&lt;&gt;[0,150]
 	(
 		( 
-			(Lv[0]+AL[0]+(l[0]/2) &lt; TVa[0])
+			(Lv[0]+AL+(l[0]/2) &lt; TVa[0])
                        		)
 		&amp;&amp; OBCS_0.Connecting  &amp;&amp; !failOBC[0]
 	)
@@ -1634,8 +1634,8 @@ expected to have value close to zero
 		</query>
 		<query>
 			<formula>Pr(&lt;&gt;[0,150] ([][0,4] forall (tid:int[0,nTram-1]) 
-		!(TCV_0.a-AL[tid]-(l[tid]/2) &lt;= TCV_0.pos &amp;&amp;
-		TCV_0.pos &lt;= TCV_0.b+AL[tid]+(l[tid]/2)
+		!(TCV_0.a-AL-(l[tid]/2) &lt;= TCV_0.pos &amp;&amp;
+		TCV_0.pos &lt;= TCV_0.b+AL+(l[tid]/2)
 		)
 	&amp;&amp; TCV_0.Occupied))
 			</formula>
@@ -1646,7 +1646,7 @@ expected to have value close to zero
 		</query>
 		<query>
 			<formula>Pr(&lt;&gt;[0,150] ([][0,4]
-	exists (tid:int[0,nTram-1])  (TCV_0.a-AL[tid]-(l[tid]/2) &lt;= TCV_0.pos &amp;&amp; TCV_0.pos &lt;= TCV_0.b+AL[tid]+(l[tid]/2)) 
+	exists (tid:int[0,nTram-1])  (TCV_0.a-AL-(l[tid]/2) &lt;= TCV_0.pos &amp;&amp; TCV_0.pos &lt;= TCV_0.b+AL+(l[tid]/2)) 
 	&amp;&amp; TCV_0.Free))
 			</formula>
 			<comment>phi_26 : a virtual track circuit is set to free but at least a  tram is occupying it.

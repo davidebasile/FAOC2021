@@ -1,0 +1,193 @@
+Options for the verification:
+  Generating no trace
+  Search order is breadth first
+  Using conservative space optimisation
+  Seed is 1618568097
+  State space representation uses minimal constraint systems
+[2K
+Verifying formula 1: Pr(<>[0,150]([][0,3]OCCC.Connecting&&!failOBC[0]))
+			
+ -- Throughput: 40102 states/sec, Load: 1199 runs[K -- Throughput: 58703 states/sec, Load: 1141 runs[K -- Throughput: 53607 states/sec, Load: 1056 runs[K -- Throughput: 49860 states/sec, Load: 977 runs[K -- Throughput: 51068 states/sec, Load: 905 runs[K -- Throughput: 46172 states/sec, Load: 831 runs[K -- Throughput: 46509 states/sec, Load: 763 runs[K -- Throughput: 52105 states/sec, Load: 696 runs[K -- Throughput: 51728 states/sec, Load: 620 runs[K -- Throughput: 51557 states/sec, Load: 545 runs[K -- Throughput: 43847 states/sec, Load: 470 runs[K -- Throughput: 47376 states/sec, Load: 406 runs[K -- Throughput: 52144 states/sec, Load: 337 runs[K -- Throughput: 51713 states/sec, Load: 261 runs[K -- Throughput: 50987 states/sec, Load: 184 runs[K -- Throughput: 52381 states/sec, Load: 110 runs[K -- Throughput: 51644 states/sec, Load: 35 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.0725188]
+with confidence 0.995.
+Values in [17.8261,146.214] mean=99.3598 steps=1.28387: 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 2 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 2 2 2
+[2K
+Verifying formula 2: Pr[<=bound]( <>(OCCC.Connecting && ((OCCC.tid==0 && !OBCC_0.Connecting))))
+			
+ -- Throughput: 12 states/sec, Load: 631 runs[K -- Throughput: 25067 states/sec, Load: 631 runs[K -- Throughput: 64608 states/sec, Load: 595 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 3: Pr(<>[0,150] ([][0,15] OCCconnectedCounter>0 && OCCR.WaitingLoc && (forall (tid:int[0,nTram-1]) !failOBC[tid])))
+			
+ -- Throughput: 11 states/sec, Load: 1199 runs[K -- Throughput: 23073 states/sec, Load: 1199 runs[K -- Throughput: 41093 states/sec, Load: 1166 runs[K -- Throughput: 41704 states/sec, Load: 1106 runs[K -- Throughput: 42196 states/sec, Load: 1045 runs[K -- Throughput: 43217 states/sec, Load: 984 runs[K -- Throughput: 43815 states/sec, Load: 922 runs[K -- Throughput: 41841 states/sec, Load: 858 runs[K -- Throughput: 34615 states/sec, Load: 797 runs[K -- Throughput: 45074 states/sec, Load: 748 runs[K -- Throughput: 42881 states/sec, Load: 682 runs[K -- Throughput: 42953 states/sec, Load: 620 runs[K -- Throughput: 43858 states/sec, Load: 558 runs[K -- Throughput: 40014 states/sec, Load: 495 runs[K -- Throughput: 37672 states/sec, Load: 437 runs[K -- Throughput: 39267 states/sec, Load: 383 runs[K -- Throughput: 39196 states/sec, Load: 326 runs[K -- Throughput: 36696 states/sec, Load: 269 runs[K -- Throughput: 35379 states/sec, Load: 216 runs[K -- Throughput: 34110 states/sec, Load: 165 runs[K -- Throughput: 29383 states/sec, Load: 115 runs[K -- Throughput: 29286 states/sec, Load: 73 runs[K -- Throughput: 32664 states/sec, Load: 31 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 4: Pr[<=bound](<>(OCCS.c1>TmaxSafeOCC && OCCconnectedCounter!=0 && !OCCS.FailSafe))
+			
+ -- Throughput: 5 states/sec, Load: 631 runs[K -- Throughput: 21054 states/sec, Load: 631 runs[K -- Throughput: 50264 states/sec, Load: 601 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 5: Pr[<=bound](<>OCCM.DegradadedMode)
+			
+ -- Throughput: 5 states/sec, Load: 631 runs[K -- Throughput: 21071 states/sec, Load: 631 runs[K -- Throughput: 49250 states/sec, Load: 600 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 6: Pr(<>[0,150]([][0,7]OBCS_0.Disconnect&&OBCS_0.IXL!=-1&&!failOBC[0]))
+			
+ -- Throughput: 5 states/sec, Load: 1199 runs[K -- Throughput: 6018 states/sec, Load: 1199 runs[K -- Throughput: 30635 states/sec, Load: 1191 runs[K -- Throughput: 28869 states/sec, Load: 1146 runs[K -- Throughput: 36413 states/sec, Load: 1104 runs[K -- Throughput: 39301 states/sec, Load: 1051 runs[K -- Throughput: 35342 states/sec, Load: 995 runs[K -- Throughput: 33368 states/sec, Load: 943 runs[K -- Throughput: 29272 states/sec, Load: 895 runs[K -- Throughput: 37295 states/sec, Load: 853 runs[K -- Throughput: 36377 states/sec, Load: 799 runs[K -- Throughput: 26508 states/sec, Load: 746 runs[K -- Throughput: 37071 states/sec, Load: 708 runs[K -- Throughput: 37813 states/sec, Load: 654 runs[K -- Throughput: 39743 states/sec, Load: 599 runs[K -- Throughput: 36727 states/sec, Load: 542 runs[K -- Throughput: 36644 states/sec, Load: 489 runs[K -- Throughput: 35706 states/sec, Load: 436 runs[K -- Throughput: 36384 states/sec, Load: 384 runs[K -- Throughput: 35215 states/sec, Load: 331 runs[K -- Throughput: 33342 states/sec, Load: 280 runs[K -- Throughput: 35528 states/sec, Load: 233 runs[K -- Throughput: 36992 states/sec, Load: 181 runs[K -- Throughput: 36797 states/sec, Load: 127 runs[K -- Throughput: 27089 states/sec, Load: 74 runs[K -- Throughput: 33370 states/sec, Load: 35 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 7: Pr(<>[0,150]
+	(
+		( 
+			(Lv[0]+PL[0]+(l[0]/2) < TVa[0])
+                       		)
+		&& OBCS_0.Connecting  && !failOBC[0]
+	)
+)
+			
+ -- Throughput: 3 states/sec, Load: 1199 runs[K -- Throughput: 13032 states/sec, Load: 1199 runs[K -- Throughput: 41750 states/sec, Load: 1181 runs[K -- Throughput: 41612 states/sec, Load: 1120 runs[K -- Throughput: 40004 states/sec, Load: 1060 runs[K -- Throughput: 41395 states/sec, Load: 1001 runs[K -- Throughput: 41136 states/sec, Load: 942 runs[K -- Throughput: 41579 states/sec, Load: 882 runs[K -- Throughput: 42541 states/sec, Load: 822 runs[K -- Throughput: 41613 states/sec, Load: 761 runs[K -- Throughput: 44155 states/sec, Load: 701 runs[K -- Throughput: 42653 states/sec, Load: 637 runs[K -- Throughput: 37286 states/sec, Load: 576 runs[K -- Throughput: 31417 states/sec, Load: 522 runs[K -- Throughput: 38652 states/sec, Load: 476 runs[K -- Throughput: 37409 states/sec, Load: 421 runs[K -- Throughput: 44601 states/sec, Load: 367 runs[K -- Throughput: 45264 states/sec, Load: 302 runs[K -- Throughput: 43640 states/sec, Load: 237 runs[K -- Throughput: 43756 states/sec, Load: 173 runs[K -- Throughput: 45232 states/sec, Load: 110 runs[K -- Throughput: 46044 states/sec, Load: 44 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 8: Pr(<>[0,150]([][0,16] OBCS_0.Connecting && OBCM_0.NormalOperation))
+			
+ -- Throughput: 2 states/sec, Load: 1199 runs[K -- Throughput: 3009 states/sec, Load: 1199 runs[K -- Throughput: 40240 states/sec, Load: 1195 runs[K -- Throughput: 40592 states/sec, Load: 1136 runs[K -- Throughput: 41112 states/sec, Load: 1078 runs[K -- Throughput: 39372 states/sec, Load: 1019 runs[K -- Throughput: 29199 states/sec, Load: 962 runs[K -- Throughput: 40161 states/sec, Load: 920 runs[K -- Throughput: 44593 states/sec, Load: 861 runs[K -- Throughput: 45908 states/sec, Load: 797 runs[K -- Throughput: 43343 states/sec, Load: 730 runs[K -- Throughput: 44621 states/sec, Load: 667 runs[K -- Throughput: 46849 states/sec, Load: 603 runs[K -- Throughput: 41314 states/sec, Load: 535 runs[K -- Throughput: 42097 states/sec, Load: 475 runs[K -- Throughput: 39340 states/sec, Load: 414 runs[K -- Throughput: 42143 states/sec, Load: 357 runs[K -- Throughput: 40708 states/sec, Load: 297 runs[K -- Throughput: 38255 states/sec, Load: 237 runs[K -- Throughput: 32756 states/sec, Load: 182 runs[K -- Throughput: 42434 states/sec, Load: 136 runs[K -- Throughput: 41149 states/sec, Load: 74 runs[K -- Throughput: 42756 states/sec, Load: 15 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 9: Pr(<>[0,150]
+	([][0,50] (
+		(TVa[0] < Lv[0]-PL[0]-(l[0]/2) )
+                       		&& (OBCS_0.Disconnect || OBCS_0.CheckingTV)  
+	 	) && OBCS_0.IXL!=-1 
+	))
+			
+ -- Throughput: 1 states/sec, Load: 1199 runs[K -- Throughput: 17042 states/sec, Load: 1199 runs[K -- Throughput: 30191 states/sec, Load: 1175 runs[K -- Throughput: 27798 states/sec, Load: 1131 runs[K -- Throughput: 29217 states/sec, Load: 1091 runs[K -- Throughput: 30453 states/sec, Load: 1049 runs[K -- Throughput: 34386 states/sec, Load: 1005 runs[K -- Throughput: 33507 states/sec, Load: 956 runs[K -- Throughput: 36400 states/sec, Load: 907 runs[K -- Throughput: 35298 states/sec, Load: 854 runs[K -- Throughput: 33611 states/sec, Load: 803 runs[K -- Throughput: 26557 states/sec, Load: 754 runs[K -- Throughput: 32997 states/sec, Load: 715 runs[K -- Throughput: 36238 states/sec, Load: 667 runs[K -- Throughput: 35692 states/sec, Load: 615 runs[K -- Throughput: 34916 states/sec, Load: 563 runs[K -- Throughput: 34732 states/sec, Load: 513 runs[K -- Throughput: 36014 states/sec, Load: 463 runs[K -- Throughput: 34957 states/sec, Load: 411 runs[K -- Throughput: 34981 states/sec, Load: 360 runs[K -- Throughput: 33922 states/sec, Load: 310 runs[K -- Throughput: 35917 states/sec, Load: 261 runs[K -- Throughput: 37204 states/sec, Load: 208 runs[K -- Throughput: 36680 states/sec, Load: 155 runs[K -- Throughput: 25558 states/sec, Load: 102 runs[K -- Throughput: 33023 states/sec, Load: 65 runs[K -- Throughput: 34564 states/sec, Load: 17 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 10: Pr[<=bound](<> OBCS_0.ConnectionLost && OBCM_0.NormalOperation )
+			
+ -- Throughput: 1 states/sec, Load: 631 runs[K -- Throughput: 5013 states/sec, Load: 631 runs[K -- Throughput: 50275 states/sec, Load: 624 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 11: Pr[<=bound] (<> OBCM_0.DegradadedMode && OBCD_0.Moving )
+			
+ -- Throughput: 1 states/sec, Load: 631 runs[K -- Throughput: 33086 states/sec, Load: 631 runs[K -- Throughput: 54386 states/sec, Load: 584 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 12: Pr[<=bound](<>(!OBCM_0.NormalOperation))
+			
+ -- Throughput: 1 states/sec, Load: 631 runs[K -- Throughput: 33089 states/sec, Load: 631 runs[K -- Throughput: 55113 states/sec, Load: 584 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 13: Pr(<>[0,150]([][0,46] OBCC_0.Connecting && OBCM_0.NormalOperation))
+			
+ -- Throughput: 1 states/sec, Load: 1199 runs[K -- Throughput: 9021 states/sec, Load: 1199 runs[K -- Throughput: 45687 states/sec, Load: 1186 runs[K -- Throughput: 43095 states/sec, Load: 1120 runs[K -- Throughput: 42698 states/sec, Load: 1058 runs[K -- Throughput: 42222 states/sec, Load: 996 runs[K -- Throughput: 43960 states/sec, Load: 935 runs[K -- Throughput: 44706 states/sec, Load: 871 runs[K -- Throughput: 43268 states/sec, Load: 806 runs[K -- Throughput: 36184 states/sec, Load: 744 runs[K -- Throughput: 23667 states/sec, Load: 692 runs[K -- Throughput: 30077 states/sec, Load: 658 runs[K -- Throughput: 31579 states/sec, Load: 614 runs[K -- Throughput: 30564 states/sec, Load: 569 runs[K -- Throughput: 31464 states/sec, Load: 525 runs[K -- Throughput: 33035 states/sec, Load: 479 runs[K -- Throughput: 29548 states/sec, Load: 432 runs[K -- Throughput: 30830 states/sec, Load: 389 runs[K -- Throughput: 31384 states/sec, Load: 344 runs[K -- Throughput: 31468 states/sec, Load: 299 runs[K -- Throughput: 31553 states/sec, Load: 253 runs[K -- Throughput: 37530 states/sec, Load: 208 runs[K -- Throughput: 42878 states/sec, Load: 154 runs[K -- Throughput: 32133 states/sec, Load: 91 runs[K -- Throughput: 40886 states/sec, Load: 44 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 14: Pr(<>[0,150]([][0,16] OBCC_0.Connected && OBCM_0.NormalOperation))
+			
+ -- Throughput: 1 states/sec, Load: 1199 runs[K -- Throughput: 3007 states/sec, Load: 1199 runs[K -- Throughput: 29862 states/sec, Load: 1195 runs[K -- Throughput: 29326 states/sec, Load: 1151 runs[K -- Throughput: 30283 states/sec, Load: 1109 runs[K -- Throughput: 30094 states/sec, Load: 1066 runs[K -- Throughput: 30327 states/sec, Load: 1022 runs[K -- Throughput: 32144 states/sec, Load: 978 runs[K -- Throughput: 31321 states/sec, Load: 932 runs[K -- Throughput: 31532 states/sec, Load: 886 runs[K -- Throughput: 28980 states/sec, Load: 841 runs[K -- Throughput: 30847 states/sec, Load: 799 runs[K -- Throughput: 28118 states/sec, Load: 754 runs[K -- Throughput: 20038 states/sec, Load: 714 runs[K -- Throughput: 26402 states/sec, Load: 685 runs[K -- Throughput: 28223 states/sec, Load: 647 runs[K -- Throughput: 28965 states/sec, Load: 606 runs[K -- Throughput: 29101 states/sec, Load: 564 runs[K -- Throughput: 30082 states/sec, Load: 521 runs[K -- Throughput: 29228 states/sec, Load: 478 runs[K -- Throughput: 29453 states/sec, Load: 436 runs[K -- Throughput: 29011 states/sec, Load: 393 runs[K -- Throughput: 28830 states/sec, Load: 351 runs[K -- Throughput: 26891 states/sec, Load: 310 runs[K -- Throughput: 27769 states/sec, Load: 271 runs[K -- Throughput: 22400 states/sec, Load: 231 runs[K -- Throughput: 23012 states/sec, Load: 198 runs[K -- Throughput: 28808 states/sec, Load: 165 runs[K -- Throughput: 29901 states/sec, Load: 123 runs[K -- Throughput: 30133 states/sec, Load: 80 runs[K -- Throughput: 30094 states/sec, Load: 37 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 15: Pr(<>[0,150]([][0,3]!IXLC_0.Waiting))
+			
+ -- Throughput: 1 states/sec, Load: 1199 runs[K -- Throughput: 9041 states/sec, Load: 1199 runs[K -- Throughput: 40662 states/sec, Load: 1186 runs[K -- Throughput: 39622 states/sec, Load: 1127 runs[K -- Throughput: 38385 states/sec, Load: 1070 runs[K -- Throughput: 37808 states/sec, Load: 1015 runs[K -- Throughput: 37349 states/sec, Load: 960 runs[K -- Throughput: 38929 states/sec, Load: 904 runs[K -- Throughput: 40873 states/sec, Load: 848 runs[K -- Throughput: 33814 states/sec, Load: 788 runs[K -- Throughput: 33636 states/sec, Load: 739 runs[K -- Throughput: 38109 states/sec, Load: 691 runs[K -- Throughput: 41176 states/sec, Load: 635 runs[K -- Throughput: 39968 states/sec, Load: 575 runs[K -- Throughput: 38795 states/sec, Load: 517 runs[K -- Throughput: 39854 states/sec, Load: 461 runs[K -- Throughput: 41156 states/sec, Load: 404 runs[K -- Throughput: 44325 states/sec, Load: 344 runs[K -- Throughput: 42449 states/sec, Load: 280 runs[K -- Throughput: 41975 states/sec, Load: 218 runs[K -- Throughput: 42257 states/sec, Load: 158 runs[K -- Throughput: 42413 states/sec, Load: 97 runs[K -- Throughput: 37173 states/sec, Load: 35 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.0541701]
+with confidence 0.995.
+Values in [17.4059,17.8186] mean=17.5909 steps=0.00412641: 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+[2K
+Verifying formula 16: Pr[<=bound](<>(IXLC_0.Connecting && (IXLC_0.tid==0 && !OBCS_0.Connecting)))
+			
+ -- Throughput: 0 states/sec, Load: 631 runs[K -- Throughput: 1002 states/sec, Load: 631 runs[K -- Throughput: 50286 states/sec, Load: 630 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 17: Pr[Lv[0]<=spacebound](<>(IXLD_0.Disconnecting && ((IXLC_0.tid==0 && !OBCS_0.Connected))))
+			
+ -- Throughput: 0 states/sec, Load: 631 runs[K -- Throughput: 1036 states/sec, Load: 631 runs[K -- Throughput: 57771 states/sec, Load: 630 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 18: Pr(<>[0,150](IXLD_0.Disconnecting && (Lv[0]+PL[0]+l[0]/2<TCVa[1])))
+			
+ -- Throughput: 0 states/sec, Load: 1199 runs[K -- Throughput: 1002 states/sec, Load: 1199 runs[K -- Throughput: 45648 states/sec, Load: 1198 runs[K -- Throughput: 46802 states/sec, Load: 1132 runs[K -- Throughput: 44146 states/sec, Load: 1064 runs[K -- Throughput: 46011 states/sec, Load: 1000 runs[K -- Throughput: 42798 states/sec, Load: 934 runs[K -- Throughput: 45896 states/sec, Load: 871 runs[K -- Throughput: 48646 states/sec, Load: 805 runs[K -- Throughput: 49721 states/sec, Load: 734 runs[K -- Throughput: 48591 states/sec, Load: 663 runs[K -- Throughput: 50125 states/sec, Load: 592 runs[K -- Throughput: 50310 states/sec, Load: 519 runs[K -- Throughput: 36409 states/sec, Load: 447 runs[K -- Throughput: 46565 states/sec, Load: 394 runs[K -- Throughput: 47986 states/sec, Load: 327 runs[K -- Throughput: 47828 states/sec, Load: 258 runs[K -- Throughput: 40131 states/sec, Load: 188 runs[K -- Throughput: 41959 states/sec, Load: 130 runs[K -- Throughput: 37002 states/sec, Load: 70 runs[K -- Throughput: 40906 states/sec, Load: 16 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 19: Pr[<=bound](<>( 
+((IXLD_0.releaseOccupied==true)&&(IXLD_0.Disconnecting && TCV_1.Free))
+||
+((IXLD_0.releaseOccupied==false)&&(IXLD_0.Disconnecting && TCV_1.Occupied))
+))
+			
+ -- Throughput: 0 states/sec, Load: 631 runs[K -- Throughput: 1002 states/sec, Load: 631 runs[K -- Throughput: 50281 states/sec, Load: 630 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 20: Pr(<>[0,150] ([][0,8] connectedCounter[0]>0 && IXLR_0.WaitingLoc && (forall (tid:int[0,nTram-1]) !failOBC[tid])))
+			
+ -- Throughput: 0 states/sec, Load: 1199 runs[K -- Throughput: 1005 states/sec, Load: 1199 runs[K -- Throughput: 28018 states/sec, Load: 1198 runs[K -- Throughput: 27982 states/sec, Load: 1157 runs[K -- Throughput: 28484 states/sec, Load: 1117 runs[K -- Throughput: 28850 states/sec, Load: 1075 runs[K -- Throughput: 25828 states/sec, Load: 1034 runs[K -- Throughput: 23500 states/sec, Load: 996 runs[K -- Throughput: 27336 states/sec, Load: 962 runs[K -- Throughput: 28731 states/sec, Load: 922 runs[K -- Throughput: 29336 states/sec, Load: 880 runs[K -- Throughput: 25600 states/sec, Load: 838 runs[K -- Throughput: 18642 states/sec, Load: 801 runs[K -- Throughput: 24213 states/sec, Load: 774 runs[K -- Throughput: 27938 states/sec, Load: 740 runs[K -- Throughput: 30954 states/sec, Load: 699 runs[K -- Throughput: 27563 states/sec, Load: 655 runs[K -- Throughput: 24222 states/sec, Load: 615 runs[K -- Throughput: 20358 states/sec, Load: 580 runs[K -- Throughput: 18324 states/sec, Load: 551 runs[K -- Throughput: 23647 states/sec, Load: 524 runs[K -- Throughput: 28775 states/sec, Load: 490 runs[K -- Throughput: 31952 states/sec, Load: 448 runs[K -- Throughput: 31721 states/sec, Load: 402 runs[K -- Throughput: 30940 states/sec, Load: 356 runs[K -- Throughput: 32016 states/sec, Load: 311 runs[K -- Throughput: 34043 states/sec, Load: 265 runs[K -- Throughput: 31388 states/sec, Load: 215 runs[K -- Throughput: 20665 states/sec, Load: 170 runs[K -- Throughput: 25613 states/sec, Load: 140 runs[K -- Throughput: 26977 states/sec, Load: 103 runs[K -- Throughput: 31629 states/sec, Load: 64 runs[K -- Throughput: 24953 states/sec, Load: 18 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 21: Pr[<=bound](<> IXLR_0.ReceivedLoc && (TCV_2.checkU1 || TCV_2.checkU2))
+			
+ -- Throughput: 0 states/sec, Load: 631 runs[K -- Throughput: 1003 states/sec, Load: 631 runs[K -- Throughput: 45690 states/sec, Load: 630 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 22: Pr(<>[0,150] (IXLR_0.ReceivedLoc && (TCV_0.checkU1 || TCV_0.checkU2) && (TCV_1.checkU1 || TCV_1.checkU2)))
+			
+ -- Throughput: 0 states/sec, Load: 1197 runs[K -- Throughput: 1001 states/sec, Load: 1197 runs[K -- Throughput: 47940 states/sec, Load: 1187 runs[K -- Throughput: 49915 states/sec, Load: 677 runs[K -- Throughput: 48686 states/sec, Load: 146 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0.95,1]
+with confidence 0.995.
+Values in [20.0002,23.1862] mean=20.4816 steps=0.0318601: 70 64 67 60 67 50 52 53 43 33 50 37 43 30 43 32 31 21 27 18 14 18 19 15 17 15 14 13 12 13 8 11 1 8 5 10 9 11 6 6 9 2 4 4 3 5 4 5 1 7 2 1 2 3 0 3 1 0 2 3 2 2 1 0 2 0 2 0 0 0 0 1 2 0 0 1 0 0 1 0 2 0 1 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 1
+[2K
+Verifying formula 23: Pr[<=bound](<>(IXLS_0.c1>TmaxSafe && connectedCounter[0]!=0&& !IXLS_0.FailSafe))
+			
+ -- Throughput: 0 states/sec, Load: 631 runs[K -- Throughput: 1002 states/sec, Load: 631 runs[K -- Throughput: 59161 states/sec, Load: 630 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
+[2K
+Verifying formula 24: Pr(<>[0,150]([][0,5]!IXLM_0.DegradadedMode&&connectedCounter[0]>0 && PL[0]>=Lsafemargin))
+			
+ -- Throughput: 0 states/sec, Load: 1199 runs[K -- Throughput: 1002 states/sec, Load: 1199 runs[K -- Throughput: 47892 states/sec, Load: 1198 runs[K -- Throughput: 47639 states/sec, Load: 1128 runs[K -- Throughput: 43191 states/sec, Load: 1059 runs[K -- Throughput: 39190 states/sec, Load: 997 runs[K -- Throughput: 46394 states/sec, Load: 940 runs[K -- Throughput: 47957 states/sec, Load: 873 runs[K -- Throughput: 46103 states/sec, Load: 803 runs[K -- Throughput: 45453 states/sec, Load: 736 runs[K -- Throughput: 38822 states/sec, Load: 670 runs[K -- Throughput: 38463 states/sec, Load: 614 runs[K -- Throughput: 45642 states/sec, Load: 558 runs[K -- Throughput: 47229 states/sec, Load: 492 runs[K -- Throughput: 45664 states/sec, Load: 424 runs[K -- Throughput: 42912 states/sec, Load: 358 runs[K -- Throughput: 43288 states/sec, Load: 296 runs[K -- Throughput: 44333 states/sec, Load: 233 runs[K -- Throughput: 42744 states/sec, Load: 170 runs[K -- Throughput: 41853 states/sec, Load: 107 runs[K -- Throughput: 39479 states/sec, Load: 47 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 25: Pr(<>[0,150] ([][0,4] forall (tid:int[0,nTram-1]) 
+		!(TCV_0.a-PL[tid]-(l[tid]/2) <= TCV_0.pos &&
+		TCV_0.pos <= TCV_0.b+PL[tid]+(l[tid]/2)
+		)
+	&& TCV_0.Occupied))
+			
+ -- Throughput: 0 states/sec, Load: 1199 runs[K -- Throughput: 1003 states/sec, Load: 1199 runs[K -- Throughput: 37237 states/sec, Load: 1198 runs[K -- Throughput: 26147 states/sec, Load: 1144 runs[K -- Throughput: 25439 states/sec, Load: 1106 runs[K -- Throughput: 30150 states/sec, Load: 1070 runs[K -- Throughput: 38909 states/sec, Load: 1026 runs[K -- Throughput: 37803 states/sec, Load: 970 runs[K -- Throughput: 28825 states/sec, Load: 915 runs[K -- Throughput: 37100 states/sec, Load: 874 runs[K -- Throughput: 40216 states/sec, Load: 820 runs[K -- Throughput: 42536 states/sec, Load: 762 runs[K -- Throughput: 42313 states/sec, Load: 701 runs[K -- Throughput: 42048 states/sec, Load: 640 runs[K -- Throughput: 31675 states/sec, Load: 579 runs[K -- Throughput: 38221 states/sec, Load: 533 runs[K -- Throughput: 40900 states/sec, Load: 478 runs[K -- Throughput: 30423 states/sec, Load: 419 runs[K -- Throughput: 36143 states/sec, Load: 375 runs[K -- Throughput: 38146 states/sec, Load: 323 runs[K -- Throughput: 40733 states/sec, Load: 267 runs[K -- Throughput: 40081 states/sec, Load: 208 runs[K -- Throughput: 38312 states/sec, Load: 150 runs[K -- Throughput: 37187 states/sec, Load: 94 runs[K -- Throughput: 39709 states/sec, Load: 40 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 26: Pr(<>[0,150] ([][0,4]
+	exists (tid:int[0,nTram-1])  (TCV_0.a-PL[tid]-(l[tid]/2) <= TCV_0.pos && TCV_0.pos <= TCV_0.b+PL[tid]+(l[tid]/2)) 
+	&& TCV_0.Free))
+			
+ -- Throughput: 0 states/sec, Load: 1199 runs[K -- Throughput: 1002 states/sec, Load: 1199 runs[K -- Throughput: 40173 states/sec, Load: 1198 runs[K -- Throughput: 40894 states/sec, Load: 1139 runs[K -- Throughput: 40840 states/sec, Load: 1080 runs[K -- Throughput: 42218 states/sec, Load: 1021 runs[K -- Throughput: 42203 states/sec, Load: 960 runs[K -- Throughput: 33216 states/sec, Load: 899 runs[K -- Throughput: 33949 states/sec, Load: 851 runs[K -- Throughput: 40001 states/sec, Load: 802 runs[K -- Throughput: 40311 states/sec, Load: 744 runs[K -- Throughput: 40663 states/sec, Load: 685 runs[K -- Throughput: 38391 states/sec, Load: 626 runs[K -- Throughput: 43745 states/sec, Load: 571 runs[K -- Throughput: 43427 states/sec, Load: 507 runs[K -- Throughput: 44343 states/sec, Load: 444 runs[K -- Throughput: 43166 states/sec, Load: 380 runs[K -- Throughput: 38068 states/sec, Load: 318 runs[K -- Throughput: 42840 states/sec, Load: 263 runs[K -- Throughput: 43653 states/sec, Load: 202 runs[K -- Throughput: 36658 states/sec, Load: 139 runs[K -- Throughput: 36720 states/sec, Load: 85 runs[K -- Throughput: 42664 states/sec, Load: 32 runs[K[2K -- Formula is satisfied.
+(1199 runs) Pr(MITL ) in [0,0.05]
+with confidence 0.995.
+[2K
+Verifying formula 27: Pr[<=bound](<>IXLM_0.DegradadedMode)
+			
+ -- Throughput: 0 states/sec, Load: 631 runs[K -- Throughput: 1002 states/sec, Load: 631 runs[K -- Throughput: 55871 states/sec, Load: 630 runs[K[2K -- Formula is satisfied.
+(57 runs) Pr(<> ...) in [0,0.0997776]
+with confidence 0.995.
