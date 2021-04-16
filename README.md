@@ -1,4 +1,4 @@
-EXPERIMENTS REPRODUCTION PACKAGE
+**EXPERIMENTS REPRODUCTION PACKAGE**
 
 This repository contains the models and experiments logs for the article submitted at Formal Aspects of Computing, special issue 
 of our RSSRail 2019 paper. 
