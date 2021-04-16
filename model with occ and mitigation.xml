@@ -1397,6 +1397,14 @@ system
        TCV_2;  </system>
 	<queries>
 		<query>
+			<formula># CHECK THE OTHER SCENARIOS FOR CORRECT ENUMERATION OF FORMULAE AS IN THE FAOC PAPER</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
 			<formula>#simulate 1 [Lv[0]&lt;=bound] {TCV_1.Occupied, IXLD_0.Disconnecting}
 			</formula>
 			<comment>
